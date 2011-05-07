@@ -166,6 +166,7 @@ class SOM:
                     tmp_nodes[r,c] += self.FV_distance(self.nodes[r,c], self.nodes[n[0],n[1]])
         return tmp_nodes
     
+    # Show smoothness of the SOM.  The darker the area the more rapid the change, generally bad.
     def save_similarity_mask(self, filename, path="."):
         tmp_nodes = self.build_distance_mask()
         #tmp_nodes -= tmp_nodes.min()
