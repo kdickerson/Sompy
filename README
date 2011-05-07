@@ -1,5 +1,9 @@
 Provides a simple framework for creating and training Self-Organizing Maps fairly quickly using scipy.
 
+Built against the Python 2.x series on Linux.  Python 3 compatibility unknown.  No OS specific code used, but untested on other OSes.
+Dependencies:
+  Saving images (like the similarity mask) requires Python Imaging Library (PIL)
+
 An example is included which creates a SOM for colors.  This is a nice way to see what's happening.
 
 The save_colors function is meaningless outside of the colors example.
