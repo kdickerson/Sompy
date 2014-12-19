@@ -51,7 +51,7 @@ class SOM:
             train_vector[t] = scipy.array(train_vector[t])
         delta_nodes = scipy.zeros((self.width, self.height, self.FV_size), float)
         
-        for i in range(1, iterations):
+        for i in range(0, iterations):
             cur_radius = self.radius_decay(i)
             cur_lr = self.learning_rate_decay(i)
             sys.stdout.write("\rTraining Iteration: " + str(i+1) + "/" + str(iterations))
